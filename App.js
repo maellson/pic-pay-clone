@@ -6,31 +6,15 @@ import Font from 'expo';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 
-class HomeScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Home!</Text>
-        <Icon name="md-add" size={25} />
-      </View>
-    );
-  }
-}
+import Home from './components/Home';
+import Settings from './components/Settings';
 
-class SettingsScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Settings!</Text>
-      </View>
-    );
-  }
-}
+
 
 export default createBottomTabNavigator(
   {
-    Home: HomeScreen,
-    Settings: SettingsScreen,
+    Home: Home,
+    Settings: Settings,
   },
   {
     navigationOptions: ({ navigation }) => ({
@@ -48,6 +32,9 @@ export default createBottomTabNavigator(
     tabBarOptions: {
       activeTintColor: '#555',
       inactiveTintColor: '#ccc',
+      style: {
+        backgroundColor: '#08C'
+      }
     },
   }
 );
