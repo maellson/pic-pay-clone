@@ -5,11 +5,9 @@ import Font from 'expo';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
-
+// components
 import Home from './components/Home';
 import Settings from './components/Settings';
-
-
 
 export default createBottomTabNavigator(
   {
@@ -33,7 +31,7 @@ export default createBottomTabNavigator(
       activeTintColor: '#555',
       inactiveTintColor: '#ccc',
       style: {
-        backgroundColor: '#08C'
+        /* backgroundColor: '#08C' */
       }
     },
   }

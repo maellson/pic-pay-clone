@@ -1,15 +1,26 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
-import colors from '../colors/colors';
+import Colors from '../colors/colors';
 
 
 export default class Header extends React.Component {
   render() {
     return (
-      <View>
-        <Text style={{color: colors.primary}}>Alex</Text>
+
+      <View style={styles.header}>
+        <Text>Alex</Text>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  header: {
+    backgroundColor: Colors.primary,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: 100
+  }
+});

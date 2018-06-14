@@ -1,4 +1,4 @@
-export const colors = {
-    primary: '55c25f',
-    secondary: '#3f9b60'
+export default class Colors {
+    static primary = '#55c25f';
+    static secondary = '#3f9b60';
 }
