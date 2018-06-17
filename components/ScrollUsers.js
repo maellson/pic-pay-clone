@@ -11,7 +11,7 @@ class ItemUsers extends React.Component {
     return (
       <View style={styles.itemScrollUsers}>
         <Image style={styles.imageScrollUsers} source={{uri: 'https://avatars0.githubusercontent.com/u/16847836?s=460&v=4'}} />
-        <Text style={{flexWrap: 'wrap', color: '#fff', fontWeight: 'bold'}}>
+        <Text style={{flexWrap: 'wrap', color: '#fff', fontWeight: 'bold', textAlign: 'center'}}>
           Alex Alan Nunes
         </Text>
       </View>
@@ -52,15 +52,15 @@ const styles = StyleSheet.create({
     color: Colors.light
   },
   imageScrollUsers: {
-    height: 70,
-    width: 70,
+    height: 60,
+    width: 60,
     borderRadius: 100,
   },
   itemScrollUsers: {
     flexDirection: 'column', 
     justifyContent: 'center', 
     alignItems: 'center',
-    marginHorizontal: 15,
+    width: 100
   },
   viewScrollUsers: {
     flexDirection: 'row',
