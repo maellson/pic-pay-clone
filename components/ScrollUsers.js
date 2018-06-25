@@ -12,7 +12,7 @@ class ItemUsers extends React.Component {
       <View style={styles.itemScrollUsers}>
         <Image style={styles.imageScrollUsers} source={{uri: 'https://avatars0.githubusercontent.com/u/16847836?s=460&v=4'}} />
         <Text style={{flexWrap: 'wrap', color: '#fff', fontWeight: 'bold', textAlign: 'center'}}>
-          Alex Alan Nunes
+          @alexalannunes
         </Text>
       </View>
     )
@@ -60,7 +60,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column', 
     justifyContent: 'center', 
     alignItems: 'center',
-    width: 100
+    width: 100,
+    paddingHorizontal: 10,
   },
   viewScrollUsers: {
     flexDirection: 'row',

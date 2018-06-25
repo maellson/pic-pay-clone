@@ -34,5 +34,6 @@ export default createBottomTabNavigator(
         /* backgroundColor: '#08C' */
       }
     },
+    swipeEnabled: true,
   }
 );

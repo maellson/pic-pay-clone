@@ -1,7 +1,7 @@
 {
     "expo": {
         "name": "PicPay Clone",
-        "slug": "PicPay Clone",
+        "slug": "picpay-clone",
         "sdkVersion": "27.0.0"
     }
 }
