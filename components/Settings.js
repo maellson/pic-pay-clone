@@ -74,6 +74,70 @@ export default class Settings extends React.Component {
               <Text style={styles.titleMenuItem}>Ver minhas assinaturas</Text>
             </View>
           </View>
+
+          <Text style={styles.title}>Para o meu negócio</Text>
+
+          <View style={styles.viewLinksToActions}>
+            <View style={styles.viewLnikMennuItem}>
+              <Text style={styles.titleMenuItem}>
+                PicPay <Text style={{fontWeight:'bold', color: Colors.primary}}>PRO</Text>
+              </Text>
+            </View>
+          </View>
+
+          <View style={styles.viewLinksToActions}>
+            <View style={styles.viewLnikMennuItem}>
+              <Text style={styles.titleMenuItem}>Para estabelecimentos</Text>
+            </View>
+          </View>
+
+          <Text style={styles.title}>Configurações</Text>
+
+          <View style={styles.viewLinksToActions}>
+            <View style={styles.viewLnikMennuItem}>
+              <Text style={styles.titleMenuItem}>Alterar minha senha</Text>
+            </View>
+          </View>
+          <View style={styles.viewLinksToActions}>
+            <View style={styles.viewLnikMennuItem}>
+              <Text style={styles.titleMenuItem}>Privacidade</Text>
+            </View>
+          </View>
+          <View style={styles.viewLinksToActions}>
+            <View style={styles.viewLnikMennuItem}>
+              <Text style={styles.titleMenuItem}>Notificações</Text>
+            </View>
+          </View>
+
+          <Text style={styles.title}>Geral</Text>
+
+          <View style={styles.viewLinksToActions}>
+            <View style={styles.viewLnikMennuItem}>
+              <Text style={styles.titleMenuItem}>Precisa de ajuda?</Text>
+            </View>
+          </View>
+          <View style={styles.viewLinksToActions}>
+            <View style={styles.viewLnikMennuItem}>
+              <Text style={styles.titleMenuItem}>Sobre o PicPay</Text>
+            </View>
+          </View>
+          <View style={styles.viewLinksToActions}>
+            <View style={styles.viewLnikMennuItem}>
+              <Text style={styles.titleMenuItem}>Desativar minha conta</Text>
+            </View>
+          </View>
+
+          <Text style={styles.title}></Text>
+
+          <View style={styles.viewLinksToActions}>
+            <View style={styles.viewLnikMennuItem}>
+              <Text style={[styles.titleMenuItem, {color: 'red'}]}>Sair</Text>
+            </View>
+          </View>
+
+          <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 10, marginBottom:20}}>
+            <Text style={{color: Colors.grayLight}}>PicPay para android v.10.8.14</Text>
+          </View>
           
         </ScrollView>
       </View>

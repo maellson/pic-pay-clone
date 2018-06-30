@@ -34,7 +34,7 @@ class ItemFeed extends React.Component {
             <Text style={styles.textCountIcon}>13 horas atrás</Text>
           </View>
           <View style={{flexDirection:'row'}}>
-            <Icon name="md-chatboxes" size={20} color={Colors.grayLight} />
+            <Icon name="ios-chatboxes-outline" size={20} color={Colors.grayLight} />
             <Text style={styles.textCountIcon}>3</Text>
             <Icon name="md-heart-outline" size={20} color={Colors.grayLight} />
             <Text style={styles.textCountIcon}>0</Text>

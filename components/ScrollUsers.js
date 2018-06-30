@@ -27,7 +27,7 @@ export default class Header extends React.Component {
     return (
       <View style={styles.scrollUsers}>
         <Text style={styles.titleScrollUsers}>Sugestôes para você</Text>
-        <ScrollView horizontal={true}>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <View style={styles.viewScrollUsers}>
             {
               this.state.users.map(user => <ItemUsers key={user} />)

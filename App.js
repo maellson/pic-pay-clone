@@ -11,18 +11,19 @@ import Settings from './components/Settings';
 
 export default createBottomTabNavigator(
   {
-    Home: Home,
-    Settings: Settings,
+    'Início': Home,
+    'Ajustes': Settings,
   },
   {
     navigationOptions: ({ navigation }) => ({
       tabBarIcon: ({ focused, tintColor }) => {
         const { routeName } = navigation.state;
         let iconName;
-        if (routeName === 'Home') {
-          iconName = 'md-home';
-        } else if (routeName === 'Settings') {
-          iconName = 'md-settings';
+        if (routeName === 'Início') {
+          iconName = focused ? 'ios-home' : 'ios-home-outline';
+        } 
+        else if (routeName === 'Ajustes') {
+          iconName = focused ? 'ios-settings' : 'ios-settings-outline';
         }
         return <Icon name={iconName} size={25} color={tintColor} />;
       },
